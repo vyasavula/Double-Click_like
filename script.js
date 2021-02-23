@@ -22,14 +22,18 @@ const createHeart = (e) => {
     heart.classList.add('fas')
     heart.classList.add('fa-heart')
 
+//Gives the values for X and Y co-ordinates
     const x = e.clientX
     const y = e.clientY
-
+//console.log(x, y)
     const leftOffset = e.target.offsetLeft
     const topOffset = e.target.offsetTop
 
+    //console.log(leftOffset, topOffset)
+
     const xInside = x - leftOffset
     const yInside = y - topOffset
+   // console.log(xInside, yInside)
 
     heart.style.top = `${yInside}px`
     heart.style.left = `${xInside}px`
